@@ -84,12 +84,15 @@
 
 
 
+<meta name="description" content="Stay hungry. Stay foolish.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="聆听回忆">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="聆听回忆">
+<meta property="og:description" content="Stay hungry. Stay foolish.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="聆听回忆">
+<meta name="twitter:description" content="Stay hungry. Stay foolish.">
 
 
 
@@ -123,6 +126,15 @@
 
 
 
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=59075332";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -171,15 +183,9 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            关于
+            首页
           </a>
         </li>
       
@@ -187,13 +193,17 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
             归档
           </a>
         </li>
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+          <a href="/tags/Hexo" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -281,32 +291,14 @@
 
       
         
-          
-            <p>使用Hexo搭建个人博客小结</p>
-<h1 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h1><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>用来生成静态页面，去Node.js的<a href="https://nodejs.org/en/" target="_blank" rel="external">官网</a>下载并安装。</p>
-<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>用来提交本地Hexo内容到GitHub上，下载对应版本的<a href="https://git-scm.com" target="_blank" rel="external">Git</a>并安装，Mac上的Xcode自带Git。</p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>Node.js和Git安装好之后，接着安装Hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
-<h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>安装完Hexo之后，创建一个文件夹，如blog，Hexo会在指定文件夹中新建所需要的文件。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init blog</div><div class="line">$ <span class="built_in">cd</span> blog</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
-<h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><h3 id="清除缓存"><a href="#清除缓存" class="headerlink" title="清除缓存"></a>清除缓存</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div></pre></td></tr></table></figure>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<h3 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>在浏览器中访问：<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>，启动本地服务器进行测试。</p>
-<h3 id="部署网站"><a href="#部署网站" class="headerlink" title="部署网站"></a>部署网站</h3><p>例如部署到git上，首先安装hexo-deployer-git。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<p>在部署之前，必须先在_config.yml中修改参数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/xxx/xxx.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p>Hexo提供快速方便的一键部署功能，部署命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>部署完毕后，可以访问：<a href="">https://xxx.github.io/</a>，来浏览发布的博客。</p>
-<h1 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h1><ol>
-<li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo官方参考文档</a>。</li>
-<li><a href="http://baixin.io/2015/08/HEXO搭建个人博客/" target="_blank" rel="external">HEXO搭建个人博客</a>。</li>
-<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool" target="_blank" rel="external">hexo你的博客</a>。</li>
-</ol>
-
-          
+          <p>使用Hexo搭建个人博客小结</p>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>用来生成静态页面，去Node.js的<a href="https://nodejs.org/en/">官网</a>下载并安装。</p>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>用来提交本地Hexo内容到GitHub上，下载对应版本的<a href="https://git-scm.com">Git</a>并安装，Mac上的Xcode自带Git。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/10/19/Hello-Hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -397,18 +389,14 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+          <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/10/18/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -469,9 +457,9 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
-               alt="Ye Hu" />
-          <p class="site-author-name" itemprop="name">Ye Hu</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+               alt="yehu" />
+          <p class="site-author-name" itemprop="name">yehu</p>
+          <p class="site-description motion-element" itemprop="description">Stay hungry. Stay foolish.</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -485,7 +473,7 @@
 
           
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
+              <a href="/tags/Hexo">
                 <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">标签</span>
               </a>
@@ -527,7 +515,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Ye Hu</span>
+  <span class="author" itemprop="copyrightHolder">yehu</span>
 </div>
 
 <div class="powered-by">
