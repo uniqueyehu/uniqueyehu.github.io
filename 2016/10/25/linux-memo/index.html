@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo," />
+  <meta name="keywords" content="Linux," />
 
 
 
@@ -84,22 +84,16 @@
 
 
 
-<meta name="description" content="使用Hexo搭建个人博客小结
-配置环境安装Node.js用来生成静态页面，去Node.js的官网下载并安装。
-安装Git用来提交本地Hexo内容到GitHub上，下载对应版本的Git并安装，Mac上的Xcode自带Git。">
+<meta name="description" content="Linux知识的备忘录，常用命令、基础知识的整理。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello Hexo">
-<meta property="og:url" content="http://yoursite.com/2016/10/19/Hello-Hexo/index.html">
+<meta property="og:title" content="Linux-memo">
+<meta property="og:url" content="http://yoursite.com/2016/10/25/linux-memo/index.html">
 <meta property="og:site_name" content="聆听回忆">
-<meta property="og:description" content="使用Hexo搭建个人博客小结
-配置环境安装Node.js用来生成静态页面，去Node.js的官网下载并安装。
-安装Git用来提交本地Hexo内容到GitHub上，下载对应版本的Git并安装，Mac上的Xcode自带Git。">
-<meta property="og:updated_time" content="2016-10-20T16:22:42.000Z">
+<meta property="og:description" content="Linux知识的备忘录，常用命令、基础知识的整理。">
+<meta property="og:updated_time" content="2016-10-25T16:13:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello Hexo">
-<meta name="twitter:description" content="使用Hexo搭建个人博客小结
-配置环境安装Node.js用来生成静态页面，去Node.js的官网下载并安装。
-安装Git用来提交本地Hexo内容到GitHub上，下载对应版本的Git并安装，Mac上的Xcode自带Git。">
+<meta name="twitter:title" content="Linux-memo">
+<meta name="twitter:description" content="Linux知识的备忘录，常用命令、基础知识的整理。">
 
 
 
@@ -120,10 +114,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/10/19/Hello-Hexo/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/25/linux-memo/"/>
 
 
-  <title> Hello Hexo | 聆听回忆 </title>
+  <title> Linux-memo | 聆听回忆 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -252,7 +246,7 @@
             
             
               
-                Hello Hexo
+                Linux-memo
               
             
           </h1>
@@ -264,8 +258,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-19T23:09:17+08:00" content="2016-10-19">
-              2016-10-19
+            <time itemprop="dateCreated" datetime="2016-10-25T23:19:47+08:00" content="2016-10-25">
+              2016-10-25
             </time>
           </span>
 
@@ -279,7 +273,7 @@
 
           
           
-             <span id="/2016/10/19/Hello-Hexo/" class="leancloud_visitors" data-flag-title="Hello Hexo">
+             <span id="/2016/10/25/linux-memo/" class="leancloud_visitors" data-flag-title="Linux-memo">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -301,32 +295,15 @@
       
 
       
-        <p>使用Hexo搭建个人博客小结</p>
-<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>用来生成静态页面，去Node.js的<a href="https://nodejs.org/en/" target="_blank" rel="external">官网</a>下载并安装。</p>
-<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>用来提交本地Hexo内容到GitHub上，下载对应版本的<a href="https://git-scm.com" target="_blank" rel="external">Git</a>并安装，Mac上的Xcode自带Git。</p>
+        <p>Linux知识的备忘录，常用命令、基础知识的整理。</p>
 <a id="more"></a>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>Node.js和Git安装好之后，接着安装Hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
-<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>安装完Hexo之后，创建一个文件夹，如blog，Hexo会在指定文件夹中新建所需要的文件。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init blog</div><div class="line">$ <span class="built_in">cd</span> blog</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h3 id="清除缓存"><a href="#清除缓存" class="headerlink" title="清除缓存"></a>清除缓存</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div></pre></td></tr></table></figure>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<h3 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>在浏览器中访问：<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>，启动本地服务器进行测试。</p>
-<h3 id="部署网站"><a href="#部署网站" class="headerlink" title="部署网站"></a>部署网站</h3><p>例如部署到git上，首先安装hexo-deployer-git。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<p>在部署之前，必须先建立与你用户名对应的仓库，仓库名必须为your_user_name.github.io，然后在_config.yml中修改参数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/xxx/xxx.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p>Hexo提供快速方便的一键部署功能，部署命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>部署完毕后，可以访问：<a href="">https://xxx.github.io/</a>，来浏览发布的博客。</p>
-<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><p>使用以下命令来创建一篇新的文章。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"title"</span></div></pre></td></tr></table></figure>
-<h2 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h2><ol>
-<li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo官方参考文档</a>。</li>
-<li><a href="http://baixin.io/2015/08/HEXO搭建个人博客/" target="_blank" rel="external">HEXO搭建个人博客</a>。</li>
-<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool" target="_blank" rel="external">hexo你的博客</a>。</li>
-</ol>
+<h2 id="解压与压缩"><a href="#解压与压缩" class="headerlink" title="解压与压缩"></a>解压与压缩</h2><h3 id="tar命令"><a href="#tar命令" class="headerlink" title="tar命令"></a>tar命令</h3><h4 id="tar参数"><a href="#tar参数" class="headerlink" title="tar参数"></a>tar参数</h4><p>-c：将文件打包（但不压缩）create<br>-x：将打包文件解压   extra<br>-z：将打包文件压缩<br>-v：把压缩过程显示出来<br>-f：我的理解是用当前的名字，如xxx目录，那么打包之后就是xxx.tar，压缩之后就是xxx.tar.gz</p>
+<h4 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h4><p>打包目录下的workspace（不压缩）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -cvf workspace.tar workspace</div></pre></td></tr></table></figure></p>
+<p>打包并压缩目录下的worksapce<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -zcvf workspace.tar.gz worksapce</div></pre></td></tr></table></figure></p>
+<h4 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h4><p>这需要看后缀名来的，当后缀名有.gz时表示这个包经过压缩处理的。反之，则没有。但都可以用tar来解压的。<br>1.解包 workspace.tar<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -xvf worksapce.tar</div></pre></td></tr></table></figure></p>
+<p>2.解包 workspace.tar.gz<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -xvf workspace.tar.gz</div></pre></td></tr></table></figure></p>
+<h2 id="ps命令"><a href="#ps命令" class="headerlink" title="ps命令"></a>ps命令</h2><p>to be contiue …</p>
+<h2 id="vim使用"><a href="#vim使用" class="headerlink" title="vim使用"></a>vim使用</h2><p>to be continue …</p>
 
       
     </div>
@@ -349,7 +326,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag">#Hexo</a>
+            <a href="/tags/Linux/" rel="tag">#Linux</a>
           
         </div>
       
@@ -358,17 +335,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/18/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2016/10/21/XX-Net/" rel="next" title="XX-Net">
+                <i class="fa fa-chevron-left"></i> XX-Net
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/21/XX-Net/" rel="prev" title="XX-Net">
-                XX-Net <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -475,7 +448,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置环境"><span class="nav-number">1.</span> <span class="nav-text">配置环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Git"><span class="nav-number">1.2.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo"><span class="nav-number">1.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建站"><span class="nav-number">2.</span> <span class="nav-text">建站</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">2.1.</span> <span class="nav-text">初始化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">3.</span> <span class="nav-text">部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#清除缓存"><span class="nav-number">3.1.</span> <span class="nav-text">清除缓存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成静态文件"><span class="nav-number">3.2.</span> <span class="nav-text">生成静态文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动本地服务器"><span class="nav-number">3.3.</span> <span class="nav-text">启动本地服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署网站"><span class="nav-number">3.4.</span> <span class="nav-text">部署网站</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#写作"><span class="nav-number">4.</span> <span class="nav-text">写作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考："><span class="nav-number">5.</span> <span class="nav-text">参考：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#解压与压缩"><span class="nav-number">1.</span> <span class="nav-text">解压与压缩</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#tar命令"><span class="nav-number">1.1.</span> <span class="nav-text">tar命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#tar参数"><span class="nav-number">1.1.1.</span> <span class="nav-text">tar参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#压缩"><span class="nav-number">1.1.2.</span> <span class="nav-text">压缩</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解压"><span class="nav-number">1.1.3.</span> <span class="nav-text">解压</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ps命令"><span class="nav-number">2.</span> <span class="nav-text">ps命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vim使用"><span class="nav-number">3.</span> <span class="nav-text">vim使用</span></a></li></ol></div>
             
           </div>
         </section>
