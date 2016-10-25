@@ -84,16 +84,19 @@
 
 
 
-<meta name="description" content="Linux知识的备忘录，常用命令、基础知识的整理。">
+<meta name="description" content="Linux知识的备忘录，常用命令、基础知识的整理。
+解压与压缩tar命令tar参数-c：将文件打包（但不压缩）create-x：将打包文件解压   extra-z：将打包文件压缩-v：把压缩过程显示出来-f：我的理解是用当前的名字，如xxx目录，那么打包之后就是xxx.tar，压缩之后就是xxx.tar.gz">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux-memo">
 <meta property="og:url" content="http://yoursite.com/2016/10/25/linux-memo/index.html">
 <meta property="og:site_name" content="聆听回忆">
-<meta property="og:description" content="Linux知识的备忘录，常用命令、基础知识的整理。">
-<meta property="og:updated_time" content="2016-10-25T16:13:25.000Z">
+<meta property="og:description" content="Linux知识的备忘录，常用命令、基础知识的整理。
+解压与压缩tar命令tar参数-c：将文件打包（但不压缩）create-x：将打包文件解压   extra-z：将打包文件压缩-v：把压缩过程显示出来-f：我的理解是用当前的名字，如xxx目录，那么打包之后就是xxx.tar，压缩之后就是xxx.tar.gz">
+<meta property="og:updated_time" content="2016-10-25T16:19:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux-memo">
-<meta name="twitter:description" content="Linux知识的备忘录，常用命令、基础知识的整理。">
+<meta name="twitter:description" content="Linux知识的备忘录，常用命令、基础知识的整理。
+解压与压缩tar命令tar参数-c：将文件打包（但不压缩）create-x：将打包文件解压   extra-z：将打包文件压缩-v：把压缩过程显示出来-f：我的理解是用当前的名字，如xxx目录，那么打包之后就是xxx.tar，压缩之后就是xxx.tar.gz">
 
 
 
@@ -296,8 +299,8 @@
 
       
         <p>Linux知识的备忘录，常用命令、基础知识的整理。</p>
-<a id="more"></a>
 <h2 id="解压与压缩"><a href="#解压与压缩" class="headerlink" title="解压与压缩"></a>解压与压缩</h2><h3 id="tar命令"><a href="#tar命令" class="headerlink" title="tar命令"></a>tar命令</h3><h4 id="tar参数"><a href="#tar参数" class="headerlink" title="tar参数"></a>tar参数</h4><p>-c：将文件打包（但不压缩）create<br>-x：将打包文件解压   extra<br>-z：将打包文件压缩<br>-v：把压缩过程显示出来<br>-f：我的理解是用当前的名字，如xxx目录，那么打包之后就是xxx.tar，压缩之后就是xxx.tar.gz</p>
+<a id="more"></a>
 <h4 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h4><p>打包目录下的workspace（不压缩）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -cvf workspace.tar workspace</div></pre></td></tr></table></figure></p>
 <p>打包并压缩目录下的worksapce<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -zcvf workspace.tar.gz worksapce</div></pre></td></tr></table></figure></p>
 <h4 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h4><p>这需要看后缀名来的，当后缀名有.gz时表示这个包经过压缩处理的。反之，则没有。但都可以用tar来解压的。<br>1.解包 workspace.tar<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -xvf worksapce.tar</div></pre></td></tr></table></figure></p>
